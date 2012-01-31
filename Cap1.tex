@@ -1,0 +1,65 @@
+\documentclass[main]{subfiles}
+\begin{document}
+\chapter{El problema}
+\section{Planteamiento del problema}
+	Mecánica de contacto es el área de conocimiento que estudia el contacto entre dos superficies, así como las solicitaciones presentes en él. El fenómeno ha sido estudiado en distintos ámbitos tales como: el fenómeno de adhesión en el contacto, la transferencia térmica entre cuerpos y los efectos de la lubricación en la superficie en el contacto mecánico mencionados por \citet{popov2010contact} pero en particular, el contacto mecánico rueda-riel.
+
+	Desde los aportes de \citet{Herz1881}, se han determinado diferentes modelos para identificar tanto los esfuerzos como las características que inciden en el momento y lugar del contacto. La mecánica de contacto rueda-riel es punto de estudio para la tracción de los trenes, los desgastes tanto de la rueda como el riel y los fenómenos vibratorios generados por la rugosidad de la superficie; la precisión de los modelos de contacto rueda-riel aporta la información necesaria para mejorar el entendimiento de esos puntos de estudio.
+
+	En Caracas, los sistemas ferroviarios como el Metro de Caracas y el Instituto de Ferrocarriles del Estado son de importancia, dado que de ellos depende la movilización de la mayoría de sus habitantes. El Metro de Caracas provee servicio de transporte a más de un millones de usuarios siendo en la actualidad la base del transporte de personas en toda la ciudad. El conocimiento sobre el estado del contacto mecánico permitirá tener un mejor entendimiento de las variables que inciden en el comportamiento ferroviario, pudiendo ser utilizadas en la prevención de la incidencia al desgaste por deslizamiento.	
+
+	Conscientes de la importancia de la dinámica ferroviaria, el Metro de Caracas realizó pruebas a través de asesoramiento externo de la empresa Transportation Technology Center, Inc (TTCI) bajo un convenio de transferencia tecnológica. Como parte del convenio se manejó la compra de un conjunto de equipos denominados ''Ejes Instrumentados'' que consisten en un eje cuyas ruedas fueron modificadas para determinación de las cargas verticales, laterales y longitudinales sobre la superficie de la rueda.
+
+	Metro de Caracas C.A. conjuntamente con TTCI obtuvieron una serie de resultados que identificaron focos para la mejora de la prestación del servicio, sin embargo el estudio no tuvo como enfoque principal el comportamiento del contacto rueda-riel. No obstante se recogieron una extensa serie de datos con referencia a las variables que participan en el contacto mecánico (las cargas presentes sobre la superficie de la rueda, la velocidad angular de la rueda y la velocidad propia del bogie).
+
+	Este trabajo recogió los modelos de contacto mecánico rueda-riel utilizados en el análisis de los la dinámica ferroviaria, en este caso los modelos de Kalker, Shen-Hedrick-Elkins, Polanch e incorpora la propuesta de un modelo que considera el comportamiento elástico del contacto rueda riel en función a la rugosidad de la superficie, elaborado por el tutor y autor de este trabajo denominado RailCCS. Las consideraciones que se tomen en cuenta de cada modelo permitirá consolidar un instrumento de evaluación aplicable para la evaluación del contacto rueda-riel en el sistema de Metro de Caracas.
+
+	Desde este enfoque, se plantearon los siguientes interrogantes, los cuales orientaron el desarrollo de la presente investigación: 
+
+\begin{itemize}
+	\item ¿Qué condiciones influyen en la dinámica del contacto rueda riel?
+
+	\item En base a los modelos de contacto rueda riel, ¿qué características presentes en los modelos de Kalker, Shen-Hedrick-Elkins, Polanch y el modelo propuesto de comportamiento elástico en la superficie rugosa, definen en mejor medida los resultados obtenidos en pruebas en vía?
+
+	\item ¿Pueden ser utilizados los ejes instrumentados para el estudio del contacto rueda-riel?
+\end{itemize}
+
+	En síntesis, la investigación se centró en la elaboración de un instrumento de evaluación de contacto rueda-riel, identificando características en la interacción entre estas dos superficies y sus características geométricas, elásticas, el grado de rugosidad en la superficie y principalmente los efectos del deslizamiento descritos en los modelos de contactos rueda-riel.
+
+\section{Objetivo General}
+
+	Analizar el comportamiento del contacto rueda-riel mediante la comparación de los resultados obtenidos por Metro de Caracas contra un instrumento que evalúe las condiciones de contacto en segmento de vía férrea.
+
+\section{Objetivos específicos}
+\begin{itemize}
+	\item Elaborar una clasificación dada por la geometría del perfil de la rueda y el riel, en donde se establezcan los parámetros descritos por Hertz para la identificación del área de contacto y el perfil de las presiones normales en el contacto mecánico.
+	
+	\item  Diseñar un método para relacionar las cargas verticales, laterales y longitudinales del contacto rueda-riel considerando las deformaciones registradas por las galgas extensiométricas de los ejes instrumentados de Metro de Caracas C.A. 
+		
+	\item  Determinar las características y el comportamiento de los modelos de Kalker, Shen-Hedrick-Elkins y Polach y el modelo propuesto RailCCS que permita la elaboración de un instrumento de estudio del contacto rueda-riel desde la perspectiva de los deslizamientos. 
+	
+	\item  Comparar los resultados obtenidos mediante uso de los ejes instrumentos en pruebas de segmento de vía con el instrumento de estudio del contacto rueda-riel basado en los modelos de Kalker, Shen-Hedrick-Elkins y Polach y el modelo propuesto RailCCS.
+\end{itemize}
+
+\section{Justificación}
+	La interacción rueda riel es estudiada en el ámbito de las vibraciones ocasionadas por la rugosidad, la eficiencia en la tracción del sistema y la influencia de los deslizamientos en la dinámica de los trenes. En principio, la interfaz contacto rueda riel es considerada como un deslizamiento sencillo debido al alto nivel de seguridad que posee; no obstante, desde punto de vista ingenieril, es más complejo si se toma en cuenta en la red de causas y efectos ferroviarios ya que se trata de un vínculo imperfecto \citet{iwnicki2006handbook}.
+
+	Si bien el uso del elemento finito ha demostrado ser un recurso eficiente para la determinación de las cargas en el punto y momento del contacto, al igual que la distribución de presiones normales y tangenciales, a nivel de tiempo de cálculo y precisión considerable, los modelos numéricos sustituyen al elemento finito a la hora de realizar simulaciones de grandes tramos ferroviarios como lo mencionan \citet{2011CompM..47..105V} y \citet{Kalker1991243}.
+
+	La proyección de utilidad del trabajo, es la elaboración de un instrumento de evaluación para el contacto rueda riel en el sistema de ferrocarriles de Venezuela (en particular el Metro de Caracas C.A.), identificando patrones que participan en el contacto rueda-riel con la finalidad de reducir aquellos que actúan de manera negativa en el vinculo rueda-riel, como por ejemplo el deslizamiento en determinados segmentos de vía.
+	
+	Así mismo, ofrecerá al Metro de Caracas C.A. la posibilidad de incorporar a los ejes instrumentados como parte de un esquema de mantenimiento vial ferroviario, localizando los puntos de la vía cuyo comportamiento en la interfaz rueda-riel actúe de manera no deseada.
+	
+	En conclusión, este estudio aportará significativas herramientas de análisis ferroviario al Metro de Caracas C.A. a través de un mejor entendimiento del comportamiento en el vínculo entre la rueda y el riel.
+	
+\section{Limitaciones y alcances}
+	En este trabajo se tomaron en consideración las siguientes limitaciones y alcances:
+\begin{itemize}
+	\item El comportamiento del contacto rueda-riel en el arranque y frenado no es tomado en cuenta; \citet{KalkerRF} establece que en estas circunstancias aparece un fenómeno denominado Cattaneo, este fenómeno puede ser omitido si no existe tracción inducida al eje, por lo que en las pruebas realizadas no se utilizará ningún tipo elemento motriz, o de frenado regenerativo o mecánico.
+	
+	\item Se realizaron pruebas en los segmentos de vía férrea que van desde la estación ''Propatria'' hasta la estación ''Caño Amarillo''. Este trecho es comúnmente utilizado para pruebas por lo que la logística de los ensayos se ve favorecida por la experiencia del personal que labora en Metro de Caracas C.A.
+	
+	\item Las pruebas se realizaron con vagones vacíos sin mayor carga que la propia del vagón y del bogie.
+\end{itemize}
+
+\end{document}

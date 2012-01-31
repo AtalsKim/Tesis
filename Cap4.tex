@@ -1,0 +1,37 @@
+\documentclass[main]{subfiles}
+\begin{document}
+\chapter{Interpretación y análisis de los resultados}
+
+El trabajo realizado se dividió en dos tareas principales: la deducción de las cargas verticales y laterales en función de las deformaciones en la pared de las ruedas registradas por el Metro de Caracas C.A. utilizando la interpretación realizada por TTCI en el 2001; y la evaluación del criterio de geométrico de contacto mecánico a lo largo de la vía mediante lo datos de registro.
+
+Si bien el propósito de este instrumento del análisis de vía es evaluar de manera cuantitativa la interacción del contacto rueda-riel, la opinión final que validó el instrumento es la experiencia del personal que participó en las pruebas del 2001 para validar el instrumento de manera cualitativa.
+
+\section{Modelado de interpretación de deformaciones en la rueda}
+
+El análisis de las micro deformaciones se realizó en virtud de establecer la relación entre las deformaciones registradas en la pared de la rueda y las cargas verticales y laterales al igual que la posición en la cual se lleva acabo el contacto mecánico. Siendo las dos primeras obtenidas mediante calibración en los ensayos de 2001 y la posición determinada mediante elemento finito, la determinación de las cargas se realizó mediante distintos modelos de regresión múltiple mediante ensayo y error.
+
+Para la evaluación de las cargas verticales, una aproximación lineal entre las deformaciones registradas por el puente vertical de galgas extensiometricas. La evaluación se realizo en 5 de los 22 tramos evaluados en el 2001 para cada rueda. El modelo de regresión es definido como:
+
+\begin{equation}
+F_j=k_j \sum_{i=1}^{n=4}\|\varepsilon_i\|
+\end{equation}
+
+Donde $j$ es el indicador de rueda definido por A1, B1, A2 y B2 y $\varepsilon$ la deformación registrada, a continuación los resultados obtenidos para cada prueba:
+
+\begin{table}[!hdpb]
+\caption{Pruebas para cargas verticales realizadas para la rueda A1}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}\hline
+Tramo: & $kV_{A1}$  & $R^2$ & $e$\\ \hline
+1& 0.1293 & 0.6784 & 1.7821 \\ \hline
+2& 0.1270 & 0.6738 & 2.1659 \\ \hline
+3&  & \\ \hline
+4&  & \\ \hline
+5&  & \\ \hline
+Promedio: &  & \\ \hline
+
+\end{tabular}
+\end{center}
+\end{table}
+
+\end{document}

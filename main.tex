@@ -1,0 +1,37 @@
+\documentclass[12pt]{report}
+\usepackage{times}
+\usepackage[left=4cm,right=3cm,top=4cm,bottom=3cm]{geometry}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage[round]{natbib}
+\usepackage{setspace}
+\doublespacing
+\usepackage{graphicx}
+
+
+\usepackage{subfiles}
+
+\title{EVALUACIÓN DEL COMPORTAMIENTO DEL CONTACTO RUEDA-RIEL EN SEGMENTO DE VÍA FÉRREA DEL SISTEMA METRO DE CARACAS C.A.}
+\author{Alejandro Gómez}
+\begin{document}
+\maketitle
+\tableofcontents
+\newpage
+\subfile{Intro}
+\subfile{Cap1}
+\subfile{Cap2}
+\subfile{Cap3}
+\subfile{Cap4}
+\subfile{Cap5}
+\nocite{*}
+\bibliographystyle{apalike}
+
+\newpage
+\addcontentsline{toc}{chapter}{Bibliografía}
+\bibliography{main}
+
+\end{document}
