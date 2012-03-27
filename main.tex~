@@ -11,10 +11,7 @@
 \usepackage{setspace}
 \doublespacing
 \usepackage{graphicx}
-\usepackage{verbatim}
-\usepackage{array}
-\usepackage{mdwlist}
-\usepackage{longtable}
+
 
 \usepackage{subfiles}
 
